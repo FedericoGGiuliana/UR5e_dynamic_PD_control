@@ -5,7 +5,7 @@ Dynamic PD control and teleoperation framework for the **UR5e manipulator** in *
 This project implements a simulation-based control architecture in which the robot end-effector is commanded in Cartesian space through a **Virtual Tablet** interface, while the manipulator is controlled in joint space through **inverse kinematics** and a **dynamic PD controller with model-based compensation**.
 
 <p align="center">
-  <img src="docs/images/ur5e_simulink_overview.png" alt="UR5e Simulink control scheme" width="850">
+  <img src="media/control.png" alt="UR5e Simulink control scheme" width="850">
 </p>
 
 ## Overview
@@ -66,7 +66,7 @@ The file `virtual_tablet.m` provides a simple human-machine interface for real-t
 This interface allows intuitive teleoperation while keeping the control logic separated from the user input layer.
 
 <p align="center">
-  <img src="docs/images/virtual_tablet_gui.png" alt="Virtual Tablet interface" width="650">
+  <img src="media/virtual_tablet.png" alt="Virtual Tablet interface" width="650">
 </p>
 
 ## Robot Modeling
