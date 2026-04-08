@@ -47,7 +47,7 @@ The overall torque input is computed from:
 
 The dynamic model follows the standard manipulator equation:
 
-B(q) q̈ + C(q, q̇) q̇ + g(q) + Fᵥ q̇ = τ
+**B(q) q̈ + C(q, q̇) q̇ + g(q) + Fᵥ q̇ = τ**
 
 where \(B(q)\) is the inertia matrix, \(C(q,\dot{q})\dot{q}\) contains Coriolis and centrifugal effects, \(g(q)\) is the gravity term, and \(F_v \dot{q}\) models viscous friction.
 
@@ -78,7 +78,7 @@ This interface allows intuitive teleoperation while keeping the control logic se
 The UR5e manipulator is modeled in MATLAB using geometric and inertial parameters for all 6 links.
 
 <p align="center">
-  <img src="media/UR5e.png" alt="UR5e Simulink control scheme" width="400">
+  <img src="media/UR5e.png" alt="UR5e Simulink control scheme" width="500">
 </p>
 
 The initialization script defines:
