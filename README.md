@@ -47,11 +47,15 @@ The overall torque input is computed from:
 
 The dynamic model follows the standard manipulator equation:
 
-\[
-B(q)\ddot{q} + C(q,\dot{q})\dot{q} + g(q) + F_v \dot{q} = \tau
-\]
+B(q) q̈ + C(q, q̇) q̇ + g(q) + Fᵥ q̇ = τ
 
 where \(B(q)\) is the inertia matrix, \(C(q,\dot{q})\dot{q}\) contains Coriolis and centrifugal effects, \(g(q)\) is the gravity term, and \(F_v \dot{q}\) models viscous friction.
+
+The plot below shows a representative tracking-error output obtained during closed-loop simulation.
+
+<p align="center">
+  <img src="media/errors.png" alt="Representative tracking-error plot" width="600">
+</p>
 
 ## Virtual Tablet Interface
 
@@ -66,12 +70,16 @@ The file `virtual_tablet.m` provides a simple human-machine interface for real-t
 This interface allows intuitive teleoperation while keeping the control logic separated from the user input layer.
 
 <p align="center">
-  <img src="media/virtual_tablet.png" alt="Virtual Tablet interface" width="650">
+  <img src="media/virtual_tablet.png" alt="Virtual Tablet interface" width="350">
 </p>
 
 ## Robot Modeling
 
 The UR5e manipulator is modeled in MATLAB using geometric and inertial parameters for all 6 links.
+
+<p align="center">
+  <img src="media/UR5e.png" alt="UR5e Simulink control scheme" width="400">
+</p>
 
 The initialization script defines:
 
