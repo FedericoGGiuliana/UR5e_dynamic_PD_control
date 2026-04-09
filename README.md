@@ -47,9 +47,9 @@ The overall torque input is computed from:
 
 The dynamic model follows the standard manipulator equation:
 
-**B(q) q̈ + C(q, q̇) q̇ + g(q) + Fᵥ q̇ = τ**
+`B(q) q̈ + C(q, q̇) q̇ + g(q) + Fᵥ q̇ = τ`
 
-where \(B(q)\) is the inertia matrix, \(C(q,\dot{q})\dot{q}\) contains Coriolis and centrifugal effects, \(g(q)\) is the gravity term, and \(F_v \dot{q}\) models viscous friction.
+where `B(q)` is the inertia matrix, `C(q, q̇) q̇` contains Coriolis and centrifugal terms, `g(q)` is the gravity contribution, and `Fᵥ q̇` models viscous friction.
 
 The plot below shows a representative tracking-error output obtained during closed-loop simulation.
 
@@ -95,9 +95,9 @@ These data are used by Simulink to evaluate the robot dynamics during closed-loo
 
 The simulation is organized as follows:
 
-1. The Virtual Tablet generates the Cartesian target \((x, y, z)\)
+1. The Virtual Tablet generates the Cartesian target \(x, y, z\)
 2. The inverse kinematics block computes the desired joint configuration \(q_d\)
-3. The controller computes the input torque \(\tau\)
+3. The controller computes the input torque (τ)
 4. The dynamic model updates joint accelerations, velocities, and positions
 5. The resulting configuration is visualized in 3D
 
